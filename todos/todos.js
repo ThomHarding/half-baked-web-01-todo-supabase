@@ -35,6 +35,7 @@ async function displayTodos() {
             // be sure to give each todo an event listener
             await completeTodo(todo.id);
             // on click, complete that todo
+            displayTodos();
         });
         todosEl.appendChild(renderedTodo);
     }
