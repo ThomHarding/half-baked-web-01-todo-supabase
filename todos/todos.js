@@ -36,6 +36,7 @@ async function displayTodos() {
             await completeTodo(todo.id);
             // on click, complete that todo
         });
+        todosEl.appendChild(renderedTodo);
     }
     // display the list of todos
 }
